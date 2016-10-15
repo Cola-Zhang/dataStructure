@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D19772D31DA7E403005BE042 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D19772D21DA7E403005BE042 /* main.c */; };
-		D19772E01DA7E454005BE042 /* LinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = D19772DA1DA7E454005BE042 /* LinkList.c */; };
-		D19772E11DA7E454005BE042 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = D19772DC1DA7E454005BE042 /* Queue.c */; };
-		D19772E21DA7E454005BE042 /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = D19772DE1DA7E454005BE042 /* Stack.c */; };
+		D1BFA3311DB271CB00E15224 /* LinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA32B1DB271CB00E15224 /* LinkList.c */; };
+		D1BFA3321DB271CB00E15224 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA32D1DB271CB00E15224 /* Queue.c */; };
+		D1BFA3331DB271CB00E15224 /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA32F1DB271CB00E15224 /* Stack.c */; };
+		D1BFA3351DB271D200E15224 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA3341DB271D200E15224 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,15 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D19772CF1DA7E403005BE042 /* dataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
-		D19772D21DA7E403005BE042 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		D19772D91DA7E454005BE042 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		D19772DA1DA7E454005BE042 /* LinkList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkList.c; sourceTree = "<group>"; };
-		D19772DB1DA7E454005BE042 /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
-		D19772DC1DA7E454005BE042 /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
-		D19772DD1DA7E454005BE042 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
-		D19772DE1DA7E454005BE042 /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
-		D19772DF1DA7E454005BE042 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		D19772CF1DA7E403005BE042 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1BFA32A1DB271CB00E15224 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		D1BFA32B1DB271CB00E15224 /* LinkList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkList.c; sourceTree = "<group>"; };
+		D1BFA32C1DB271CB00E15224 /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		D1BFA32D1DB271CB00E15224 /* Queue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
+		D1BFA32E1DB271CB00E15224 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		D1BFA32F1DB271CB00E15224 /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
+		D1BFA3301DB271CB00E15224 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		D1BFA3341DB271D200E15224 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = project/main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,8 @@
 		D19772C61DA7E403005BE042 = {
 			isa = PBXGroup;
 			children = (
-				D19772D11DA7E403005BE042 /* dataStructure */,
+				D1BFA3341DB271D200E15224 /* main.c */,
+				D1BFA3291DB271CB00E15224 /* stl */,
 				D19772D01DA7E403005BE042 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,32 +60,32 @@
 		D19772D01DA7E403005BE042 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D19772CF1DA7E403005BE042 /* dataStructure */,
+				D19772CF1DA7E403005BE042 /* test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D19772D11DA7E403005BE042 /* dataStructure */ = {
+		D1BFA3291DB271CB00E15224 /* stl */ = {
 			isa = PBXGroup;
 			children = (
-				D19772D91DA7E454005BE042 /* common.h */,
-				D19772DA1DA7E454005BE042 /* LinkList.c */,
-				D19772DB1DA7E454005BE042 /* LinkList.h */,
-				D19772DC1DA7E454005BE042 /* Queue.c */,
-				D19772DD1DA7E454005BE042 /* Queue.h */,
-				D19772DE1DA7E454005BE042 /* Stack.c */,
-				D19772DF1DA7E454005BE042 /* Stack.h */,
-				D19772D21DA7E403005BE042 /* main.c */,
+				D1BFA32A1DB271CB00E15224 /* common.h */,
+				D1BFA32B1DB271CB00E15224 /* LinkList.c */,
+				D1BFA32C1DB271CB00E15224 /* LinkList.h */,
+				D1BFA32D1DB271CB00E15224 /* Queue.c */,
+				D1BFA32E1DB271CB00E15224 /* Queue.h */,
+				D1BFA32F1DB271CB00E15224 /* Stack.c */,
+				D1BFA3301DB271CB00E15224 /* Stack.h */,
 			);
-			path = dataStructure;
+			name = stl;
+			path = project/stl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D19772CE1DA7E403005BE042 /* dataStructure */ = {
+		D19772CE1DA7E403005BE042 /* test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D19772D61DA7E403005BE042 /* Build configuration list for PBXNativeTarget "dataStructure" */;
+			buildConfigurationList = D19772D61DA7E403005BE042 /* Build configuration list for PBXNativeTarget "test" */;
 			buildPhases = (
 				D19772CB1DA7E403005BE042 /* Sources */,
 				D19772CC1DA7E403005BE042 /* Frameworks */,
@@ -94,9 +95,9 @@
 			);
 			dependencies = (
 			);
-			name = dataStructure;
+			name = test;
 			productName = dataStructure;
-			productReference = D19772CF1DA7E403005BE042 /* dataStructure */;
+			productReference = D19772CF1DA7E403005BE042 /* test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D19772CA1DA7E403005BE042 /* Build configuration list for PBXProject "dataStructure" */;
+			buildConfigurationList = D19772CA1DA7E403005BE042 /* Build configuration list for PBXProject "test" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -126,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D19772CE1DA7E403005BE042 /* dataStructure */,
+				D19772CE1DA7E403005BE042 /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -136,10 +137,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D19772E11DA7E454005BE042 /* Queue.c in Sources */,
-				D19772D31DA7E403005BE042 /* main.c in Sources */,
-				D19772E21DA7E454005BE042 /* Stack.c in Sources */,
-				D19772E01DA7E454005BE042 /* LinkList.c in Sources */,
+				D1BFA3351DB271D200E15224 /* main.c in Sources */,
+				D1BFA3331DB271CB00E15224 /* Stack.c in Sources */,
+				D1BFA3311DB271CB00E15224 /* LinkList.c in Sources */,
+				D1BFA3321DB271CB00E15224 /* Queue.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +251,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D19772CA1DA7E403005BE042 /* Build configuration list for PBXProject "dataStructure" */ = {
+		D19772CA1DA7E403005BE042 /* Build configuration list for PBXProject "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D19772D41DA7E403005BE042 /* Debug */,
@@ -259,7 +260,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D19772D61DA7E403005BE042 /* Build configuration list for PBXNativeTarget "dataStructure" */ = {
+		D19772D61DA7E403005BE042 /* Build configuration list for PBXNativeTarget "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D19772D71DA7E403005BE042 /* Debug */,

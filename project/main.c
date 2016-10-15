@@ -2,6 +2,7 @@
 #include "Stack.h"
 #include "LinkList.h"
 #include "Queue.h"
+#include <string.h>
 
 void testStack(){
     Stack stack = stack_create();
@@ -48,6 +49,8 @@ void testQueue(){
     queue_debug(queue);
     queue_destroy(queue);
 }
+
+
 
 int main(int argc, const char * argv[]) {
     //testStack();
