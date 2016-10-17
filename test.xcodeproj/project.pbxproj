@@ -11,6 +11,8 @@
 		D1BFA3321DB271CB00E15224 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA32D1DB271CB00E15224 /* Queue.c */; };
 		D1BFA3331DB271CB00E15224 /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA32F1DB271CB00E15224 /* Stack.c */; };
 		D1BFA3351DB271D200E15224 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA3341DB271D200E15224 /* main.c */; };
+		D1BFA33D1DB2757E00E15224 /* tcpClient.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA33B1DB2757E00E15224 /* tcpClient.c */; };
+		D1BFA3401DB286B300E15224 /* tcpServer.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA33E1DB286B300E15224 /* tcpServer.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,10 @@
 		D1BFA32F1DB271CB00E15224 /* Stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 		D1BFA3301DB271CB00E15224 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		D1BFA3341DB271D200E15224 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = project/main.c; sourceTree = "<group>"; };
+		D1BFA33B1DB2757E00E15224 /* tcpClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpClient.c; sourceTree = "<group>"; };
+		D1BFA33C1DB2757E00E15224 /* tcpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcpClient.h; sourceTree = "<group>"; };
+		D1BFA33E1DB286B300E15224 /* tcpServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpServer.c; sourceTree = "<group>"; };
+		D1BFA33F1DB286B300E15224 /* tcpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcpServer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				D1BFA3341DB271D200E15224 /* main.c */,
-				D1BFA3291DB271CB00E15224 /* stl */,
 				D19772D01DA7E403005BE042 /* Products */,
+				D1BFA3291DB271CB00E15224 /* stl */,
+				D1BFA3371DB2743A00E15224 /* tcp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +85,18 @@
 			);
 			name = stl;
 			path = project/stl;
+			sourceTree = "<group>";
+		};
+		D1BFA3371DB2743A00E15224 /* tcp */ = {
+			isa = PBXGroup;
+			children = (
+				D1BFA33B1DB2757E00E15224 /* tcpClient.c */,
+				D1BFA33C1DB2757E00E15224 /* tcpClient.h */,
+				D1BFA33E1DB286B300E15224 /* tcpServer.c */,
+				D1BFA33F1DB286B300E15224 /* tcpServer.h */,
+			);
+			name = tcp;
+			path = project/tcp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,10 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BFA3401DB286B300E15224 /* tcpServer.c in Sources */,
 				D1BFA3351DB271D200E15224 /* main.c in Sources */,
 				D1BFA3331DB271CB00E15224 /* Stack.c in Sources */,
 				D1BFA3311DB271CB00E15224 /* LinkList.c in Sources */,
 				D1BFA3321DB271CB00E15224 /* Queue.c in Sources */,
+				D1BFA33D1DB2757E00E15224 /* tcpClient.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
