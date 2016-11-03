@@ -14,14 +14,24 @@ typedef enum RESULT{
     OK
 }RESULT;
 
+typedef int Data;
+
 struct Node{
-    int data;
+    Data data;
     struct Node* next;
     struct Node* prior;
 };
 
 typedef struct Node Node;
-typedef int Data;
 
+
+struct TreeNode{
+    Data data;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
+
+typedef struct TreeNode TreeNode;
+typedef struct TreeNode* BinaryTree;
 
 #endif /* Node_h */

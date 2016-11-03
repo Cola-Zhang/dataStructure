@@ -2,6 +2,7 @@
 #include "Stack.h"
 #include "LinkList.h"
 #include "Queue.h"
+#include "BinaryTree.h"
 #include <string.h>
 #include "tcpClient.h"
 #include "tcpServer.h"
@@ -53,14 +54,25 @@ void testQueue(){
 }
 
 
+void testTree(){
+    BinaryTree tree = binaryTree_create(1);
+    TreeNode* left = binaryTree_insertLeft(tree, 2);
+    binaryTree_insertLeft(left, 4);
+    binaryTree_insertRight(left, 5);
+    TreeNode* right =binaryTree_insertRight(tree, 3);
+    binaryTree_insertLeft(right, 6);
+    binaryTree_insertRight(right, 7);
+    binaryTree_destroy(tree);
+
+}
 
 int main(int argc, const char * argv[]) {
     //testStack();
     //testLinkList();
     //testQueue();
     //tcpClient_connect("127.0.0.1", 8888);
-    tcpServer_socket(8888);
-    
+    //tcpServer_socket(8888);
+    testTree();
     return 0;
 }
 
