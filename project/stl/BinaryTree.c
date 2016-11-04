@@ -7,6 +7,8 @@
 //
 
 #include "BinaryTree.h"
+#include "Queue.h"
+#include "Stack.h"
 #include <stdlib.h>
 
 BinaryTree binaryTree_create(Data dt){
@@ -49,13 +51,65 @@ TreeNode* binaryTree_insertRight(BinaryTree tree, Data dt){
     return node;
 }
 
+void binaryTree_preorder(BinaryTree tree){
+    if(tree){
+        printf("data %d\n", (int)tree->data);
+        binaryTree_preorder(tree->left);
+        binaryTree_preorder(tree->right);
+    }
+}
+
+void binaryTree_preorder_loop(BinaryTree tree){
+    
+}
+
+void binaryTree_inorder(BinaryTree tree){
+    if(tree){
+        binaryTree_inorder(tree->left);
+        printf("data %d\n", (int)tree->data);
+        binaryTree_inorder(tree->right);
+    }
+}
+
+void binaryTree_inorder_loop(BinaryTree tree){
+    
+}
+
+void binaryTree_postorder(BinaryTree tree){
+    if(tree){
+        binaryTree_postorder(tree->left);
+        binaryTree_postorder(tree->right);
+        printf("data %d\n", (int)tree->data);
+    }
+}
+
+void binaryTree_postorder_loop(BinaryTree tree){
+    
+}
+
+void binaryTree_leveOrder(BinaryTree tree){
+    Queue queue = queue_create();
+    TreeNode* node = NULL;
+    queue_add(queue, (Data)tree);
+    while(!queue_isEmpty(queue)){
+        queue_remove(queue, (Data*)&node);
+        printf("data %d\n", (int)(((TreeNode*)node)->data));
+        if(node->left){
+            queue_add(queue, node->left);
+        }
+        if(node->right){
+            queue_add(queue, node->right);
+        }
+    }
+    queue_destroy(queue);
+}
+
+
 void binaryTree_destroy(BinaryTree tree){
-    TreeNode* node = tree;
-    if(node){
-        binaryTree_destroy(node->left);
-        binaryTree_destroy(node->right);
-        printf("free %d\n", node->data);
-        free(node);
+    if(tree){
+        binaryTree_destroy(tree->left);
+        binaryTree_destroy(tree->right);
+        free(tree);
     }
 }
 

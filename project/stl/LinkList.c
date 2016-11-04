@@ -120,14 +120,14 @@ void linkList_debug(LinkList linkList){
     Node* p = linkList->head->next;
     printf("from head\n");
     while(p != linkList->head){
-        printf("%d ", p->data);
+        printf("%d ", (int)p->data);
         p = p->next;
     }
     printf("\n");
     p = linkList->head->prior;
     printf("from tail\n");
     while (p != linkList->head) {
-        printf("%d ", p->data);
+        printf("%d ", (int)p->data);
         p = p->prior;
     }
     printf("\n");

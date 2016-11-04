@@ -14,7 +14,7 @@ typedef enum RESULT{
     OK
 }RESULT;
 
-typedef int Data;
+typedef void* Data;
 
 struct Node{
     Data data;
