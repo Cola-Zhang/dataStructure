@@ -60,7 +60,20 @@ void binaryTree_preorder(BinaryTree tree){
 }
 
 void binaryTree_preorder_loop(BinaryTree tree){
-    
+    Stack stack = stack_create();
+    TreeNode* node = tree;
+    while (node || !stack_isEmpty(stack)) {
+        while(node){
+            printf("data %d\n", (int)node->data);
+            stack_push(stack, node);
+            node = node->left;
+        }
+        if(!stack_isEmpty(stack)){
+            stack_pop(stack, (Data*)&node);
+            node = node->right;
+        }
+    }
+    stack_destroy(stack);
 }
 
 void binaryTree_inorder(BinaryTree tree){
@@ -72,7 +85,21 @@ void binaryTree_inorder(BinaryTree tree){
 }
 
 void binaryTree_inorder_loop(BinaryTree tree){
-    
+    Stack stack = stack_create();
+    TreeNode* node = tree;
+    while (node || !stack_isEmpty(stack)) {
+        while(node){
+            
+            stack_push(stack, node);
+            node = node->left;
+        }
+        if(!stack_isEmpty(stack)){
+            stack_pop(stack, (Data*)&node);
+            printf("data %d\n", (int)node->data);
+            node = node->right;
+        }
+    }
+    stack_destroy(stack);
 }
 
 void binaryTree_postorder(BinaryTree tree){
@@ -84,7 +111,26 @@ void binaryTree_postorder(BinaryTree tree){
 }
 
 void binaryTree_postorder_loop(BinaryTree tree){
-    
+    Stack stack = stack_create();
+    TreeNode* lastVisitNode = NULL;
+    TreeNode* node = tree;
+    while(node || !stack_isEmpty(stack)){
+        while (node) {
+            stack_push(stack, node);
+            node = node->left;
+        }
+        stack_peek(stack, (Data*)&node);
+        if(!stack_isEmpty(stack)){
+            if(!node->right || node->right == lastVisitNode){
+                printf("data %d\n", (int)node->data);
+                lastVisitNode = node;
+                stack_pop(stack, (Data*)&node);
+                node = NULL;
+            }else{
+                node = node->right;
+            }
+        }
+    }
 }
 
 void binaryTree_leveOrder(BinaryTree tree){

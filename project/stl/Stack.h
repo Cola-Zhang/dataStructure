@@ -18,6 +18,8 @@ RESULT stack_push(Stack stack, Data data);
 
 RESULT stack_pop(Stack stack, Data* data);
 
+RESULT stack_peek(Stack stack, Data* data);
+
 bool stack_isEmpty(Stack stack);
 
 int stack_getSize(Stack stack);

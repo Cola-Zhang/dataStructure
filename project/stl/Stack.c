@@ -22,6 +22,10 @@ RESULT stack_pop(Stack stack, Data* data){
     return linkList_pop(stack, data);
 }
 
+RESULT stack_peek(Stack stack, Data* data){
+    return linkList_get(stack, stack_getSize(stack)-1, data);
+}
+
 bool stack_isEmpty(Stack stack){
     return linkList_isEmpty(stack);
 }
