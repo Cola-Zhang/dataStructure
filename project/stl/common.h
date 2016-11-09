@@ -33,5 +33,6 @@ struct TreeNode{
 
 typedef struct TreeNode TreeNode;
 typedef struct TreeNode* BinaryTree;
+typedef struct TreeNode* BinarySearchTree;
 
 #endif /* Node_h */

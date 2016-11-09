@@ -14,6 +14,7 @@
 		D1BFA3351DB271D200E15224 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA3341DB271D200E15224 /* main.c */; };
 		D1BFA33D1DB2757E00E15224 /* tcpClient.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA33B1DB2757E00E15224 /* tcpClient.c */; };
 		D1BFA3401DB286B300E15224 /* tcpServer.c in Sources */ = {isa = PBXBuildFile; fileRef = D1BFA33E1DB286B300E15224 /* tcpServer.c */; };
+		D1CAFE1B1DD2181C00AD6C2D /* BinarySearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = D1CAFE191DD2181C00AD6C2D /* BinarySearchTree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,8 @@
 		D1BFA33C1DB2757E00E15224 /* tcpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcpClient.h; sourceTree = "<group>"; };
 		D1BFA33E1DB286B300E15224 /* tcpServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpServer.c; sourceTree = "<group>"; };
 		D1BFA33F1DB286B300E15224 /* tcpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcpServer.h; sourceTree = "<group>"; };
+		D1CAFE191DD2181C00AD6C2D /* BinarySearchTree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BinarySearchTree.c; sourceTree = "<group>"; };
+		D1CAFE1A1DD2181C00AD6C2D /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				D1BFA3301DB271CB00E15224 /* Stack.h */,
 				D1655EDA1DCB90F000EAAAC2 /* BinaryTree.c */,
 				D1655EDB1DCB90F000EAAAC2 /* BinaryTree.h */,
+				D1CAFE191DD2181C00AD6C2D /* BinarySearchTree.c */,
+				D1CAFE1A1DD2181C00AD6C2D /* BinarySearchTree.h */,
 			);
 			name = stl;
 			path = project/stl;
@@ -167,6 +172,7 @@
 				D1BFA3311DB271CB00E15224 /* LinkList.c in Sources */,
 				D1BFA3321DB271CB00E15224 /* Queue.c in Sources */,
 				D1BFA33D1DB2757E00E15224 /* tcpClient.c in Sources */,
+				D1CAFE1B1DD2181C00AD6C2D /* BinarySearchTree.c in Sources */,
 				D1655EDC1DCB90F000EAAAC2 /* BinaryTree.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

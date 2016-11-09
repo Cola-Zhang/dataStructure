@@ -6,6 +6,7 @@
 #include <string.h>
 #include "tcpClient.h"
 #include "tcpServer.h"
+#include "BinarySearchTree.h"
 
 void testStack(){
     Stack stack = stack_create();
@@ -53,7 +54,7 @@ void testQueue(){
 }
 
 
-void testTree(){
+void testBinaryTree(){
     BinaryTree tree = binaryTree_create((Data*)1);
     TreeNode* left = binaryTree_insertLeft(tree, (Data*)2);
     binaryTree_insertLeft(left, (Data*)4);
@@ -77,7 +78,18 @@ void testTree(){
     binaryTree_leveOrder(tree);
     printf("======free======\n");
     binaryTree_destroy(tree);
+}
 
+void testBinarySearchTree(){
+    BinarySearchTree bst = binarySearchTree_create((Data*)100);
+    binarySearchTree_insert(bst, (Data*)80);
+    binarySearchTree_insert(bst, (Data*)70);
+    binarySearchTree_insert(bst, (Data*)90);
+    binarySearchTree_insert(bst, (Data*)120);
+    binarySearchTree_insert(bst, (Data*)85);
+    binarySearchTree_insert(bst, (Data*)140);
+    binarySearchTree_insert(bst, (Data*)110);
+    binaryTree_leveOrder(bst);
 }
 
 int main(int argc, const char * argv[]) {
@@ -86,7 +98,8 @@ int main(int argc, const char * argv[]) {
     //testQueue();
     //tcpClient_connect("127.0.0.1", 8888);
     //tcpServer_socket(8888);
-    testTree();
+    //testBinaryTree();
+    testBinarySearchTree();
     return 0;
 }
 
